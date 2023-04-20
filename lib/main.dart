@@ -14,10 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: _title,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          scaffoldBackgroundColor: Colors.grey[50],
-          colorScheme: const ColorScheme(
-            background: Colors.deepOrangeAccent,
+      theme: ThemeData.from(
+          colorScheme: ColorScheme(
+            background: Colors.grey.shade50,
             brightness: Brightness.light,
             primary: Colors.deepOrangeAccent,
             secondary: Colors.blueGrey,
@@ -25,13 +24,13 @@ class MyApp extends StatelessWidget {
             onBackground: Colors.green,
             onError: Colors.cyan,
             onPrimary: Colors.white,
-            onSecondary: Colors.brown,
+            onSecondary: Colors.grey.shade200,
             surface: Colors.black38,
             onSurface: Colors.deepPurpleAccent
           ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(
-            color: Colors.white
+            color: Colors.black87
           ) ,
         ),
       ),
