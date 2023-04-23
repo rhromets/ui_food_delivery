@@ -41,11 +41,14 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(15.0),
-                  child: Image(
-                    height: 130.0,
-                    width: 130.0,
-                    fit: BoxFit.cover,
-                    image: AssetImage(restaurant.imageUrl.toString()),
+                  child: Hero(
+                    tag: restaurant.imageUrl.toString(),
+                    child: Image(
+                      height: 130.0,
+                      width: 130.0,
+                      fit: BoxFit.cover,
+                      image: AssetImage(restaurant.imageUrl.toString()),
+                    ),
                   ),
                 ),
                 Container(
