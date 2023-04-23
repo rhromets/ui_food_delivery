@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             background: Colors.grey.shade50,
             brightness: Brightness.light,
             primary: Colors.deepOrangeAccent,
-            secondary: Colors.blueGrey,
+            secondary: Colors.green.shade700,
             error: Colors.black45,
             onBackground: Colors.green,
             onError: Colors.cyan,
